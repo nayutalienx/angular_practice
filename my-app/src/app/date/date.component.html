@@ -1,0 +1,7 @@
+<input #item type="text" [(ngModel)]="text">
+
+<button (click)="add(item.value)">Add</button>
+
+<ul>
+    <li *ngFor="let d of data; let index = index">{{d}} <button (click)="delete(index)"> delete</button></li>
+</ul>
